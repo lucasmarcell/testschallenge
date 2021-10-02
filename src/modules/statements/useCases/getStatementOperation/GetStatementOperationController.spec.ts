@@ -56,7 +56,7 @@ describe("GetStatementOperationController", () => {
     expect(response.body.id).toBe(statement.body.id);
   });
 
-  it("should not be able to get the statement from a non-existent id", async () => {
+  it("should not be able to get the statement from a non existent id", async () => {
     const responseToken = await request(app).post("/api/v1/sessions").send({
       email: "admin@finapi.com.br",
       password: "admin",
